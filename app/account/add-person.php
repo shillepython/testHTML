@@ -3,7 +3,7 @@ require "../bd/connect.php";
 $login = filter_var(trim($_POST['login']));
 $password = filter_var(trim($_POST['password']));
 $submit = $_POST['submit'];
-$ball = 'Did not pass';
+$ball = 'Тест не пройден';
 error_reporting(E_ALL | E_STRICT);
 ini_set('display_errors', TRUE);
 ini_set('display_startup_errors', TRUE);

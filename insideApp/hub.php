@@ -15,11 +15,10 @@ if(!$_SESSION['user']){
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../app/css/style.css">
-    <title>Black Jack</title>
+    <title>HTML-test</title>
 </head>
 <body>
 
@@ -32,7 +31,7 @@ if(!$_SESSION['user']){
             <a href="?do=logout" class="text-center mb-5 text-out">Выход</a>
             <?php
             // Параметры для подключения
-
+            echo $_SESSION['user'][3];
             require "../app/bd/connect.php";
             $query ="SELECT * FROM users";
             $result = $connection->query($query) or die("Ошибка " . mysqli_error($connection));
